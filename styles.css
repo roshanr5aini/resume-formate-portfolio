@@ -1,0 +1,369 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Ensure the body height is at least 100vh */
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+h1 .details {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+hr.slim {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 2px 0; /* Further reduced space around the line */
+}
+
+h2, h3, h4, h5, h6, h7, h8, h9, h10, h11 {
+    margin: 10px 0;
+}
+
+.social-media-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    color: #007bff;
+}
+
+.objective-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0; /* Reduced space around the paragraph */
+    width: 80%;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10%;
+}
+
+h4.education-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0; /* Further reduced space around the heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+h4.college-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.education-list {
+    width: 80%;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
+}
+
+.education-list li {
+    font-size: 18px;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 25px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.education-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.education-list .gpa {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.year {
+    font-weight: bold;
+    margin-left: auto;
+    font-style: normal;
+}
+
+.projects-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+h5, h6, h7, h8, h9, h10, h11 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    position: relative; /* Needed for positioning the arrow */
+    padding-left: 50px; /* Increased space for the larger arrow */
+}
+
+h5, h6, h7, h8 {
+    color: #007bff; /* Blue color for the project title */
+}
+
+h9 {
+    color: #007bff; /* Purple color for the "Khaana App" title */
+}
+
+h10 {
+    color: #007bff; /* Green color for the "Billing Software" title */
+}
+
+h11 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    color: #007bff; /* Orange color for the "Face Detect Attendance Sheet" title */
+    position: relative; /* Needed for positioning the arrow */
+    padding-left: 50px; /* Increased space for the larger arrow */
+}
+
+h5::before, h6::before, h7::before, h8::before, h9::before, h10::before, h11::before {
+    content: "\2192"; /* Unicode for right arrow */
+    position: absolute;
+    left: 0;
+    font-size: 30px; /* Larger size for the arrow */
+    color: red; /* Red color for the arrow */
+    animation: arrow-move 1s infinite; /* Arrow movement animation */
+    top: 50%;
+    transform: translateY(-50%); /* Centers the arrow vertically */
+}
+
+h4.role-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the role heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.role-description {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0; /* Reduced space around the description */
+    width: 80%;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10%;
+}
+
+.project-description {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0; /* Reduced space around the description */
+    width: 80%;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10%;
+}
+
+.project-type {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.skills-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the skills heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.technical-skills-heading {
+    font-size: 20px; /* Adjusted font size for technical skills heading */
+    font-weight: bold;
+    margin: 5px 0; /* Reduced space around the technical skills heading */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px; /* Adjusted font size for list items */
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.skills-list li {
+    margin: 2px 0; /* Reduced margin between list items */
+    position: relative;
+    padding-left: 25px; /* Space for the bullet */
+}
+
+.skills-list li::before {
+    content: "•"; /* Bullet character */
+    position: absolute;
+    left: 0;
+    font-size: 20px; /* Size of the bullet */
+    color: #000; /* Dark color for the bullet */
+}
+
+/* Additional styles for 'Other Skills' section */
+.Other-skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px; /* Adjust font size if necessary */
+    text-align: left; /* Align text to the left */
+    width: 80%;
+    margin-left: 10%; /* Ensure proper margin */
+}
+
+.Other-skills-list li {
+    margin: 2px 0; /* Reduced margin between list items */
+    position: relative;
+    padding-left: 25px; /* Space for the bullet */
+}
+
+.Other-skills-list li::before {
+    content: "•"; /* Dark spot bullet */
+    position: absolute;
+    left: 0;
+    font-size: 20px; /* Size of the bullet */
+    color: #000; /* Dark color for the bullet */
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(5px);
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+/* Live Project styles */
+.live-project {
+    font-size: 16px;
+    color: red; /* Red color for "Live Project" */
+    font-weight: bold;
+    margin-left: 10px;
+    animation: blink 1s infinite; /* Blink animation */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blur-text {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+}
+
+.blur-text:hover {
+    filter: blur(0px);
+}
+
+/* Base styles for footer */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Maximum width to control layout on larger screens */
+    margin: 0 auto; /* Center the footer horizontally */
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-link {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-link {
+        font-size: 16px;
+        margin: 5px 0; /* Reduce margin for smaller screens */
+    }
+}
